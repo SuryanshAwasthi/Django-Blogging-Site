@@ -19,5 +19,7 @@ from . import views
 
 urlpatterns = [
 
-    path('',views.post_home,name='post_home'),
+    path('',views.post_home,name='base '),
+ path('post/<int:pk>/', views.post_detail, name='blog_post'),
+path('post/new/', views.post_new, name='post_new'),
 ]
